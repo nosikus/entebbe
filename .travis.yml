@@ -25,11 +25,11 @@ script:
   - echo "starting the test of the eduroam role"
 #  - cd roles/eduroam/
   # doing a simplesntax check of the role
-  - ansible-playbook -i inventory one.yml --syntax-check
+  - ansible-playbook -i inventory one.yaml --syntax-check
 #  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
   # now, try to execute the role under test conditions
  # - ansible-playbook tests/test.yml -i tests/inventory
-  - ansible-playbook -i inventory one.yml
+  - ansible-playbook -i inventory one.yaml
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
